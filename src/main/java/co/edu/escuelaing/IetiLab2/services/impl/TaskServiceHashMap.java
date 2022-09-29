@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import co.edu.escuelaing.IetiLab2.entities.Task;
 import co.edu.escuelaing.IetiLab2.services.TaskService;
 
-@Service
 public class TaskServiceHashMap implements TaskService {
 
     private HashMap<String, Task> tasks = new HashMap<>();

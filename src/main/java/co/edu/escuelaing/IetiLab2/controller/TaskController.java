@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import co.edu.escuelaing.IetiLab2.dto.TaskDTO;
 import co.edu.escuelaing.IetiLab2.entities.Task;
 import co.edu.escuelaing.IetiLab2.services.TaskService;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/v2/tasks")
 public class TaskController {
